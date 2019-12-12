@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css?family=B612|Open+Sans&display=swap');
+
+
+
+html, body {
+ 	height: 100%; 
+}
+
+
+body {
+	margin: 0;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	background: #484848;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #A7FFEB;
+	padding: 1em 0;
+	font-size: 24px;
+}
+nav {
+	float: right;
+}
+
+
+
+a.header {
+	color: black;
+	text-decoration: none;
+}
+a.logo {
+	font-weight: bold;
+}
+ul.nav {
+	list-style-type: none;
+	margin: 0;
+	display: flex;
+}
+li a.ul {
+	padding: 1em;
+
+}
+li a:hover {
+	background: #8EE6D2;
+}
+
+h1 {
+	margin-top: 2em;
+}
+
+router-outlet ~ * {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+}
+
+
