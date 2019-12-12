@@ -21,12 +21,11 @@ export class HttpService {
   }
 
   getCompletedQuizzes() {
-    return this.http.get("load-contacts.php");
+    return this.http.get("save-quizzes.json");
   }
 
   saveCompletedQuizzes(userAnswers) {
     const headers = new HttpHeaders().set("Content-type", "application/x-www-form-urlencoded");
-    return this.http.post("save-quizzes.php", userAnswers, {headers} );
-
+    return this.http.post("save-quizzes.json", userAnswers);
   }
 }

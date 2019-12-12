@@ -69,6 +69,12 @@ export class QuizComponent implements OnInit {
   
 
   onSubmit() {
+    if(this.userChoices.length > 0) {
+      if(this.userChoices[0][0] == -1) {
+        this.userChoices.splice(0,1);
+      }
+    }
+    console.log("this.userChoices: " + this.userChoices);
     this._http.saveCompletedQuizzes(this.userChoices).subscribe(data => {
       this.submitMessage = data;
       console.log("this.submitMessage: " + this.submitMessage);
