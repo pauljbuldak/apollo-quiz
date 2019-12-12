@@ -73,6 +73,8 @@ export class QuizComponent implements OnInit {
       this.submitMessage = data;
       console.log("this.submitMessage: " + this.submitMessage);
     });
+
+    alert("Your quiz has been submitted.");
   }
   
 

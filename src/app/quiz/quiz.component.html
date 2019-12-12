@@ -13,7 +13,7 @@
 			<div *ngIf="question.questionType == 'Multiple Choice'">
 				<mat-radio-group class="radio-group" (change)="onChange($event)">
 					<div *ngFor="let answer of question.answers; let i = index">	
-						<mat-radio-button class="radio-button" [value]="answer" color="primary">
+						<mat-radio-button class="radio-button" [value]="answer" color="accent">
 							{{ answer }}
 						</mat-radio-button>
 					</div>
@@ -22,7 +22,6 @@
 			</div>
 			
 
-			
 			<!-- Add in other types of questions -->
 		
 		</div>
@@ -31,7 +30,7 @@
 
 	</div>
 	<br>
-	<button mat-raised-button class="submit-button" color="primary">Submit</button>
+	<button mat-raised-button class="submit-button" (click)="onSubmit()" color="primary">Submit</button>
 </div>
 
 <ng-template #noQuiz>

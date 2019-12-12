@@ -6,22 +6,23 @@ a {
 
 
 h1 {
-	color: white;
+	color: black;
 	font-size: 35px;
 	padding-bottom: 20px;
 }
 h2 {
+	color: black;
 	text-align: center;
 }
 h3 {
-	color: white;
+	color: black;
 	font-size: 30px;
 }
 
 .quiz-card {
 	max-width: 400px;
 	cursor: pointer;
-	background: lightgray;
+	background: #CFCFCF;
 	text-align: center;
 }
 
