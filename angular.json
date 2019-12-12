@@ -24,7 +24,7 @@
               "src/assets",
               "src/web.config",
               "src/save-quizzes.php",
-              "src/load-contacts.php"
+              "src/load-quizzes.php"
             ],
             "styles": [
               "src/custom-theme.scss",
