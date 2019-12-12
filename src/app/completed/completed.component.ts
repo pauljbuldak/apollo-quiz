@@ -16,7 +16,7 @@ export class CompletedComponent implements OnInit {
   	this._http.getCompletedQuizzes().subscribe(data => {
   		this.userAnswers = data;
   		console.log("this.userAnswers: " + this.userAnswers);
-  	})
+  	});
 
   }
 
