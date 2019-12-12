@@ -1,0 +1,16 @@
+a {
+	color: black;
+}
+
+h1 {
+	color: white;
+	font-size: 35px;
+	padding-bottom: 20px;
+}
+
+.class-card {
+	max-width: 400px;
+	cursor: pointer;
+	background: lightgray;
+	text-align: center;
+}

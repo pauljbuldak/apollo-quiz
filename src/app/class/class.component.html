@@ -1,0 +1,54 @@
+
+<h1>Choose a class</h1>
+
+<div *ngIf="classes" >
+	<div *ngFor="let class of classes">
+		<mat-card class="class-card" (click)="getWebsiteURL(class.name)" routerLink="/quizselector">
+			<mat-card-header>
+				<mat-card-title><h2>{{ class.name }}</h2></mat-card-title>
+			</mat-card-header>
+		</mat-card>
+		<br>
+	</div>
+</div>
+
+<!--
+<ul *ngIf="classes">
+	<p>{{ classes | json }}</p>
+	<div *ngFor="let class of classes">
+
+		<pre>{{ class | json }}</pre>
+
+		<br>
+
+		<h1>{{ class.class }}</h1>
+		<h2>{{ class.quizID }}</h2>
+
+		<br>
+
+		<h3>Question 1</h3>
+		<h4>{{ class.question1.questionText }}</h4>
+			<ul>
+				<li>{{ class.question1.answerChoice1 }}</li>
+				<li>{{ class.question1.answerChoice2 }}</li>
+				<li>{{ class.question1.answerChoice3 }}</li>
+				<li>{{ class.question1.answerChoice4 }}</li>
+				<li>answerChoice: {{ class.question1.answerChoice }}</li>
+			</ul>
+		
+		<br>
+
+		<div *ngIf="class.question">
+			
+			<div *ngFor="let detail of getKeys(class.question); let i = index">
+				<p>{{ getKeys(class.question) }}</p>
+					
+				<div *ngIf="detail.answerChoice">
+					<p>{{ detail }}</p>
+					<p>{{ detail.answerChoice }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</ul> 
+-->

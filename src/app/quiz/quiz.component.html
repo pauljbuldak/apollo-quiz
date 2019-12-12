@@ -1,0 +1,42 @@
+
+<div class="light-theme">
+	<div class="quiz-container" *ngIf="quizzes; else noQuiz">
+		<div *ngFor="let quiz of quizzes" >
+			<h2>{{ quiz.quizName }}</h2>
+			<mat-divider></mat-divider>
+			
+			<div *ngFor="let question of quiz.questions">
+				<h3>Question {{ question.id }}</h3>
+				<h4>{{ question.questionText }}</h4>
+
+
+				<div *ngIf="question.questionType == 'Multiple Choice'">
+					<mat-radio-group class="radio-group" (change)="onChange($event)">
+						<div *ngFor="let answer of question.answers; let i = index">	
+							<mat-radio-button class="radio-button" [value]="answer" color="primary">
+								{{ answer }}
+							</mat-radio-button>
+						</div>
+					</mat-radio-group>
+					<mat-divider></mat-divider>
+				</div>
+				
+
+				
+				<!-- Add in other types of questions -->
+			
+			</div>
+		
+				
+
+		</div>
+		<br>
+		<button mat-raised-button class="submit-button" color="primary">Submit</button>
+	</div>
+
+	<ng-template #noQuiz>
+		<h1>This quiz is not available at this time. Please check back later.</h1>
+	</ng-template>
+</div>
+
+

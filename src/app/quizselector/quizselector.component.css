@@ -1,0 +1,27 @@
+a {
+	color: black;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+
+h1 {
+	color: white;
+	font-size: 35px;
+	padding-bottom: 20px;
+}
+h2 {
+	text-align: center;
+}
+h3 {
+	color: white;
+	font-size: 30px;
+}
+
+.quiz-card {
+	max-width: 400px;
+	cursor: pointer;
+	background: lightgray;
+	text-align: center;
+}
+

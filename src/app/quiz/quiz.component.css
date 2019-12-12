@@ -1,0 +1,66 @@
+
+.light-theme {
+	color: white;
+}
+
+
+a {
+	color: black;
+}
+
+.quiz-container {
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 150px;
+}
+
+.answer-container {
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.answer-container:hover {
+	border: 1px solid lightgray;
+}
+
+h2 {
+	font-size: 50px;
+	padding: 15px;
+}
+h3 {
+	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+h4 {
+	font-size: 20px;
+}
+
+mat-divider {
+	background-color: #BDBDBD;
+}
+
+.radio-group {
+	display: flex;
+	flex-direction: column;
+	margin: 15px 0;
+}
+
+.radio-button {
+	margin: 5px;
+}
+
+.submit-button {
+	float: right;
+	height: 50px;
+	width: 140px;
+	top: 10px;
+	right: 50px;
+	font-size: 18px;
+}
+
+
+
+
+

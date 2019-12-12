@@ -1,0 +1,18 @@
+
+
+
+<div *ngIf="quizSelect; else noQuizSelect">
+	<h1>Select a quiz</h1>
+	<div *ngFor="let quiz of quizSelect">
+		<mat-card class="quiz-card" (click)="getWebsiteURL(quiz.quizId)" routerLink="/quiz">
+			<mat-card-header>
+				<mat-card-title><h2>{{ quiz.quizId }}</h2></mat-card-title>
+			</mat-card-header>
+		</mat-card>
+		<br>
+	</div>
+</div>
+
+<ng-template #noQuizSelect>
+	<h3>There doesn't seem to be any quizzes for this class yet. Please check back later.</h3>
+</ng-template>

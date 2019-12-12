@@ -1,0 +1,65 @@
+
+html {
+	background-color: white;
+}
+
+a {
+	color: #B8860B;
+}
+
+.home-card {
+	margin-top: 50px;
+	padding: 10px;
+	background: #1c1c1c;
+	max-width: 90%;
+}
+.main {
+	margin-bottom: 75px;
+	padding-bottom: 75px;
+}
+
+h1 {
+	font-family: "B612";
+	font-size: 80px;
+	padding: 10px;
+	margin-top: 20px;
+	column-span: initial;
+	color: white;
+}
+
+h2 {
+	font-size: 35px;
+	padding: 10px;
+	color: grey;
+	column-span: initial;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	padding: 15px;
+	margin-top: 50px;
+}
+.get-started-button {
+	position: relative;
+	bottom: 125px;
+	left: 700px;
+	text-align: center;
+	padding: 12px 32px;
+	font-size: 30px;
+	height: 100px;
+	width: 300px;
+	border-radius: 4px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
