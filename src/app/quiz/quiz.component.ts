@@ -62,9 +62,6 @@ export class QuizComponent implements OnInit {
     this.userChoices.push([questionNumber, radioValue]);
     
     console.log("userChoices: " + this.userChoices);
-    console.log("userChoices[1]: " + this.userChoices[1]);
-
-
   }
   
 
@@ -75,10 +72,12 @@ export class QuizComponent implements OnInit {
       }
     }
     console.log("this.userChoices: " + this.userChoices);
+    /*
     this._http.saveCompletedQuizzes(this.userChoices).subscribe(data => {
       this.submitMessage = data;
       console.log("this.submitMessage: " + this.submitMessage);
     });
+    */
 
     alert("Your quiz has been submitted.");
   }
